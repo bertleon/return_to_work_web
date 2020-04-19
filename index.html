@@ -37,6 +37,9 @@
         .activities {
             background-color: #8e7cc3ff;
         }
+        .answerText {
+        	font-size: 15px;
+        }
         #header {
             background-color: #cfe2f3ff;
             height: 100px;
@@ -66,21 +69,10 @@
 
 
     <div id="main">
-        {{questions}}
-
-        <!-- <div v-for="category in categories" v-bind:class="category.name.toLowerCase()" class="category">
-            <a v-bind:href="'./information.html?data='+category.data">
-                <div class="imgDiv">
-                    <img class="categoryImg" v-bind:src="'images/'+category.img"/>
-                </div>
-                <h2> {{category.name}} </h2>
-            </a>
-            <ul>
-                <li v-for="subtopic in category.subtopics">
-                    <a v-bind:href="'./information.html?data='+category.data+'&sub='+subtopic">{{subtopic}}</a>
-                </li>
-            </ul>
-        </div> -->
+        <div v-for="question in questions">
+            {{question}}
+			
+		</div>
     </div>
 
     <script src="./scripts/landing.js"></script>

@@ -1,0 +1,83 @@
+  1.
+>
+>   What is your temperature today?
+>
+> Enter temp >> if above 100.4F, then continue to “How do you feel” Not Well pathway
+>
+> I didn’t take it
+>
+>
+> 2.
+>
+>   How do you feel today?
+>
+> Fine >> Thank you, push to final resources page (number 5)
+>
+> Not Well >> Continue to Symptoms
+>
+>
+> 3.
+>
+>   Symptoms
+>
+> ** If you are experiencing any of the following emergency symptoms associated
+> with COVID-19, please get medical attention immediately**
+>
+> *
+>
+>   Trouble breathing
+>
+> *
+>
+>   Persistent chest pain or pressure
+>
+> *
+>
+>   New confusion or inability to arouse (“wake up”)
+>
+> *
+>
+>   Blue-ish lips or face
+>
+> Fever (auto populate temperature if available
+>
+> Cough
+>
+> Shortness of Breath
+>
+> Headache
+>
+> Fatigue
+>
+> Diarrhea
+>
+> Nausea
+>
+> Loss of taste/smell
+>
+> Have you contacted a medical provider about your symptoms today?
+>
+> Yes
+>
+> By Phone?
+>
+> In Person?
+>
+> No
+>
+> Have you had a positive COVID-19 test result since your last report?
+>
+> Yes
+>
+> No
+>
+> I had a test but I have not gotten results yet
+>
+> 4.
+>
+>   Is anyone in your household sick today?
+>
+> Yes
+>
+> No
+
