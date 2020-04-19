@@ -8,10 +8,14 @@ var mainView = new Vue({
         axios.get("./json/questions.json").then(response => {
             this.information = response.data;
         });
+        console.log("here1");
 
         for (let page of this.information) {
             console.log(page.page);
+            console.log("here2");
         }
+        console.log("here3");
+
     },
     methods: {
     }
