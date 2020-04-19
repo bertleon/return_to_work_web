@@ -1,13 +1,17 @@
 var mainView = new Vue({
     el: "#main",
     data: {
-        questions: [], 
-        answers: {}
+        information: []
+
     },
     mounted: function() {
         axios.get("./json/questions.json").then(response => {
-            this.questions = response.data;
+            this.information = response.data;
         });
+
+        for (let page of this.information) {
+            console.log(page.page);
+        }
     },
     methods: {
     }
