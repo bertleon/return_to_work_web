@@ -1,0 +1,100 @@
+[
+    {
+        "page": "1",
+        "question": "Have you taken your temperature today?", 
+        "input_type": "single-check", 
+        "warning": "null",
+        "answers": ["Yes", "No"]
+    },
+    {
+        "page": "2",
+        "question": "What is your temperature? (in degrees farenheit)", 
+        "warning": "null",
+        "input_type": "textbox"
+    },
+    {
+        "page": "3", 
+        "question": "How do you feel today?", 
+        "input_type": "single-check", 
+        "warning": "null",
+        "answers": ["Not well", "I feel fine"]
+    }, 
+    {
+        "page": "4", 
+        "question": "Do you have any of the following symptoms? (Check all that apply)", 
+        "input_type": "multiple-check",
+        "warning": "If you are experiencing any of the symptoms in RED, please get medical attention immediately",
+        "answers": [
+            {
+                "answer": "Trouble breathing", "color": "red"
+            }, 
+            {
+                "answer": "Persistent chest pain or pressure", "color": "red"
+            },  
+            {
+                "answer": "New confusion or inability to arouse (“wake up”)", "color": "red"
+            }, 
+            {
+                "answer": "Blue-ish lips or face", "color": "red"
+            },
+            {
+                "answer": "Fever", "color": "black"
+            },
+            {
+                "answer": "Cough", "color": "black"
+            },
+            {
+                "answer": "Shortness of breath", "color": "black"
+            },
+            {
+                "answer": "Headache", "color": "black"
+            },
+            {
+                "answer": "Fatigue", "color": "black"
+            },
+            {
+                "answer": "Diarrhea", "color": "black"
+            },
+            {
+                "answer": "Nausea", "color": "black"
+            },
+            {
+                "answer": "Loss of taste/smell", "color": "black"
+            }
+            
+        ]
+    }, 
+    {
+        "page": "5", 
+        "question": "Have you contacted a medical provider about your symptoms today?", 
+        "input_type": "single-check", 
+        "warning": "null",
+        "answers": ["Yes, by phone", "Yes, in person", "No"]
+    }, 
+    {
+        "page": "5", 
+        "question": "Have you contacted a medical provider about your symptoms today?", 
+        "input_type": "single-check", 
+        "warning": "null",
+        "answers": ["Yes, by phone", "Yes, in person", "No"]
+    }, 
+    {
+        "page": "6", 
+        "question": "Have you had a positive COVID-19 test result since your last report?", 
+        "input_type": "single-check", 
+        "warning": "null",
+        "answers": ["Yes", "No", "I had a test but I have not gotten results yet"]
+    }, 
+    {
+        "page": "7", 
+        "question": "Is anyone in your household sick today?", 
+        "input_type": "single-check", 
+        "warning": "null",
+        "answers": ["Yes", "No"]
+    }, 
+    {
+        "page": "8", 
+        "info": "Final Resources Page", 
+        "warning": "null"
+    }
+]

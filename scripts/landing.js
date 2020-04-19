@@ -1,11 +1,11 @@
 var mainView = new Vue({
     el: "#main",
     data: {
-        categories: []
+        questions: []
     },
     mounted: function() {
-        axios.get("./json/categories.json").then(response => {
-            this.categories = response.data;
+        axios.get("./json/questions.json").then(response => {
+            this.questions = response.data;
         });
     },
     methods: {
