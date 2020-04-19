@@ -1,0 +1,31 @@
+{
+    "name": "Activities",
+    "img": "images/activities.png",
+    "topics": [
+        {
+            "name": "Skiing",
+            "img": "images/skiing.png",
+            "info": "Skiing is an activity where people attach skis (see image above) to the bottom of their feet and use poles to guide themselves across snow covered areas, either to control direction or speed. There are generally two types of skiiing that people do: alpine and cross country. Alpine skiing is when people ski down large declines. This type of skiing is a bit more dangerous since it usually a faster type of skiing. Alpine skiing usually involves a lot of travel since people don't tend to live near this mountainous regions. Cross country skiing is when people use the poles to push themselves along snowy areas. This type of skiing is generally considered a longer, more endurance heavy type of skiing and often requires relatively flat areas of land for people to ski on."
+        },
+        {
+            "name": "Snowboarding",
+            "img": "images/snowboarding.png",
+            "info": "Snowboarding is similar to skiing expect instead of attaching skis, you attach a snowboard (see image). Similar to the skate boarding, snowboarding is when a person use the board to skate across the top of the snow. Snowboarding is generally down a large decline and similar ot alpine skiing, requires some travel to locations that are suitable in altitude. Snowboarding is also a bit more balance focused then skiing due to the fact that you don't have poles to stabilize yourself while going down hill so often times, beginners have some difficulty staying upright while going down a slope."
+        },
+        {
+            "name": "Sledding",
+            "img": "images/sledding.jpg",
+            "info": "Sledding is when you go down a hill of snow and ice similar to snowboarding or skiing but with sledding, you tend to go down in a sled (see image). Additionally, unlike snowboarding and skiing, the decline doesn't have to massive for you to enjoy it. Often times, a small hill is enough for you to go down. All that's required is a snow covered hill and something to sled on. In many cases, a cheap plastic sled can be bought for under 10 dollars. The sled can be foregone if you're comfortable enough in your jacket to where you don't mind get some snow inside of your clothes. Another great thing about sledding is that you can do it repeatedly since you can easily climb back up the hill and go down again."
+        },
+        {
+            "name": "Snowball Fights",
+            "img": "images/snowball.png",
+            "info": "Snowball fights are a great way to fun with friends. There are any of number of ways of having a snowball but the main idea behind a snowball fight is make snowballs and throw them at each other. To make a good snowball, you will need about one to two handfuls of snow. You take the snow and compact it in your hands. Once the snow is a bit more compact, you should try and round it out so that it flys better. The snow needs to slightly wetter snow. If the snow is very powdery and 'dry' per say, then the snowball won't compact cleanly so when the snowball is thrown, the ball will fall apart. So it's more important that you know what kind of snow is on the ground outside."
+        },
+        {
+            "name": "Building a Snowman",
+            "img": "images/snowman.jpg",
+            "info": "Another fun activity you can do with friends is building a snowman. The basic idea behind creating a snowman is to make three spheres that are slightly larger than each other stacked on top of the larger ones. To create the spheres, start by making a snowball. Once you have a sufficiently compacted snowball, place the snowball on the ground and roll it through some snow. As the ball rolls, it should begin to growing in size as the snow accumulates on to the ball. While it's accumulating, pack down some of the snow onto the snowball as it grows so that it maintains a relatively spherical shape. Do this three times. Once you have the three snowballs have gotten large enough (based on how big you want to make your snowman), lift the 2nd largest onto the largest and top them with the smallest. To add some flair to the snowman, add distinguishing features like branches for arms or a carrot for a nose."
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title> Wintering Essentials - EECS 493 All Stars</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            text-align: center;
+        }
+        
+        .commuting {
+            background-color: #ea9999ff;
+        }
+        .equipment {
+            background-color: #b6d7a8ff;
+        }
+        .activities {
+            background-color: #8e7cc3ff;
+        }
+        #header {
+            background-color: #cfe2f3ff;
+            height: 100px;
+        }
+        #informationDisplay {
+            display:flex; 
+            flex-direction:column; 
+            align-items:center
+        }        
+        .subtopic {
+            width: 60%; 
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <a href="./" style="text-decoration: none">
+        <div id="header" style="display: flex; justify-content: center;">
+                <h1>Wintering Essentials</h1>
+        </div>
+    </a>
+    <div id="info" v-bind:class="category" >
+        <img height="200px" border-top="50px" v-bind:src="equipmentInfo.img"/>
+        <h2> {{title}}</h2>
+
+        <li v-for="topic in equipmentInfo.topics">
+            <a v-bind:href="'#'+topic.name">{{topic.name}}</a>
+        </li>
+
+        <div id="informationDisplay"> 
+            <div class="subtopic" v-for="top in equipmentInfo.topics"> 
+                <div v-bind:id="top.name" :ref="top.name"> 
+                    <h3> {{top.name}}</h3>
+                    <img height=100px v-bind:src="top.img"> 
+                    <p>{{top.info}}</p>
+                </div>
+
+            </div>
+        </div>
+        <div> 
+            <a v-bind:href="'./quiz.html?data='+category">
+                <button>
+                    Quiz  
+                </button>
+            </a>
+        <div> 
+    </div>
+
+    <script src="./scripts/information.js"></script>
+</body>
+
+</html>

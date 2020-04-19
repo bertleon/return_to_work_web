@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title> Wintering Essentials - EECS 493 All Stars</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            text-align: center;
+        }
+        .category {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 10px;
+        }
+        .categoryImg {
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: auto;
+        }
+        .imgDiv {
+            object-fit: scale-down;
+            height: 25%;
+            width: 100%;
+        }
+        .commuting {
+            background-color: #ea9999ff;
+        }
+        .equipment {
+            background-color: #b6d7a8ff;
+        }
+        .activities {
+            background-color: #8e7cc3ff;
+        }
+        #header {
+            background-color: #cfe2f3ff;
+            height: 100px;
+        }
+        #main {
+            height: calc(100% - 100px);
+            display: flex; 
+            flex-direction: row;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+        ul li {
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./" style="text-decoration: none">
+        <div id="header" style="display: flex; justify-content: center;">
+                <h1>Wintering Essentials</h1>
+        </div>
+    </a>
+
+    <div id="main">
+        <div v-for="category in categories" v-bind:class="category.name.toLowerCase()" class="category">
+            <a v-bind:href="'./information.html?data='+category.data">
+                <div class="imgDiv">
+                    <img class="categoryImg" v-bind:src="'images/'+category.img"/>
+                </div>
+                <h2> {{category.name}} </h2>
+            </a>
+            <ul>
+                <li v-for="subtopic in category.subtopics">
+                    <a v-bind:href="'./information.html?data='+category.data+'&sub='+subtopic">{{subtopic}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./scripts/landing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{
+  "title": "equipment",
+  "questions": [
+    {
+      "text": "What is the difference between a snow shovel and ice scraper?",
+      "answers": [
+        "None",
+        "One shovels snow and the other scrapes ice",
+        "One scrapes snow and the other shovels ice"
+      ],
+      "answer": "One shovels snow and the other scrapes ice"
+    },
+    {
+      "text": "What is more suitable to use on your windshield?",
+      "answers": [
+        "Snow shovel",
+        "Ice scraper",
+        "All of the above",
+        "None of the above"
+      ],
+      "answer": "Ice scraper"
+    },
+    {
+      "text": "What is more suitable to use on your driveway?",
+      "answers": [
+        "Snow shovel",
+        "Ice scraper",
+        "All of the above",
+        "None of the above"
+      ],
+      "answer": "Snow shovel"
+    },
+    {
+      "text": "What is more suitable to get snow off of your car?",
+      "answers": [
+        "Snow shovel",
+        "Ice scraper",
+        "All of the above",
+        "None of the above"
+      ],
+      "answer": "Ice scraper"
+    },
+    {
+      "text": "Why is there a sharp metal tip on the end of a snow shovel?",
+      "answers": [
+        "Can also be used as a weapon",
+        "To dig into tightly packed snow",
+        "Can also be used as a real shovel on dirt",
+        "None of the above"
+      ],
+      "answer": "To dig into tightly packed snow"
+    }
+  ]
+}

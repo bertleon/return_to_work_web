@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title> Wintering Essentials - EECS 493 All Stars</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0px;
+            text-align: center;
+        }
+        .category {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 10px;
+        }
+        .categoryImg {
+            max-width: 100%;
+            max-height: 100%;
+            margin-bottom: auto;
+        }
+        .imgDiv {
+            object-fit: scale-down;
+            height: 25%;
+            width: 100%;
+        }
+        .commuting {
+            background-color: #ea9999ff;
+        }
+        .equipment {
+            background-color: #b6d7a8ff;
+        }
+        .activities {
+            background-color: #8e7cc3ff;
+        }
+        .quizHeader {
+            font-size: 30px;
+            padding-top: 20px;
+        }
+        .welcome {
+			margin: 0px;
+			padding-top: 25px;
+        }
+        .startMessage {
+        	margin: 25px;
+        	font-size: 25px;
+        }
+        .questionText {
+        	font-size: 20px;
+        }
+        .answerText {
+        	font-size: 15px;
+        }
+        .finishMessage {
+        	padding-top: 25px;
+        	margin-bottom: 10px;
+        	font-size: 20px;
+        }
+        #header {
+            background-color: #cfe2f3ff;
+            height: 100px;
+        }
+        #quiz {
+            height: calc(100% - 100px);
+        }
+	</style>
+</head>
+
+<body>
+    <a href="./" style="text-decoration: none">
+        <div id="header" style="display: flex; justify-content: center;">
+                <h1>Wintering Essentials</h1>
+        </div>
+    </a>
+
+	<div id="quiz" v-bind:class="title">
+	  <div v-if="startPage">
+	    <h2 class="welcome">Welcome to the {{ title }} in winter quiz!</h2>
+	    <p class="startMessage">
+	    	Press Start to begin
+	    </p>
+
+	    <button class="btn btn-primary" v-on:click="onClickStart">Start</button>
+	  </div>
+
+	  <div v-if="quizPage">
+	    <p class="quizHeader"><strong>Question {{ currentQuestion + 1 }}/{{ questions.length }}:</strong><br/></p>
+	    <p class="questionText"><strong>{{ questions[currentQuestion].text }} </strong></p>
+	    <div class="answerText" v-for="(answer, idx) in questions[currentQuestion].answers">
+			<input type="radio" v-model="chosenAnswer" :id="'answer' + idx" :value="answer" style="margin-right: 0px">
+				{{answer}}
+			</label><br/>
+		</div><br/>
+    	<button class="btn btn-success" v-on:click="submitAnswer">Submit</button>
+	  </div>
+
+	  <div class="finishMessage" v-if="resultsPage">
+	    You scored {{percent}}%! <br/> You got {{numCorrect}} right out of {{questions.length}} questions.<br/><br/>
+	    <div class="btn-group">
+		    <form>
+	          <button class="btn btn-default" v-on:click="resetQuiz">Take quiz again</button>
+	          <button class="btn btn-default" type="submit" formaction="./index.html">Back to landing page</button>
+	      	</form>
+        </div>
+	    <!-- todo add buttons for return to section or landing page -->
+	  </div>
+
+	</div>	
+	<script src="./scripts/quiz.js"></script>
+</body>
+
+</html>

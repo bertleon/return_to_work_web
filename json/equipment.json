@@ -1,0 +1,21 @@
+{
+    "name": "Equipment",
+    "img": "images/equipment.png",
+    "topics": [
+        {
+            "name": "Snow Shovel",
+            "img": "images/snowshovel.png",
+            "info": "Snow shovel are typically made of plastic and sometimes have a sharp metal tip. Snow shovels are typically used to clear away snow from driveways and sidewalks. The trough of the shovel usually is pretty large in order to capture the a lot of snow. This is usually used as the shovel is scraped along the ground and moved to another location. The metal tip is used to dig into tightly packed snow and ice so this helps while you are moving along the ground and run into these elements. Using this in combination with salting with rock salts afterwards can keep further snow and ice build up once the area is cleared."
+        },
+        {
+            "name": "Ice Scraper",
+            "img": "images/icescraper.png",
+            "info": "An ice scraper is a tool that is used to get ice and snow off of a car. Most people store there ice scraper in their trunk or back seat as they tend to be large. The ice scraper usually has a brush end and a flatter scraping end. The brush is usually used to get a lot of snow off of the windshield and other windows on the car quickly. The scraper end is used to remove ice build up. In combination with this tool, another good to way to ensure that the car is clean is to turn on the car and heat the windows and the car itself so that any snow and ice build up starts to melt away."
+        },
+        {
+            "name": "Snow Blower",
+            "img": "images/snowblower.jpg",
+            "info": "Snow Blowers are large machines that remove snow from one area and distribute it to another via the blower, typically used for clearing sidewalks and driveways quickly. As the image above shows, snow blowers have a large area that has blades. These blades spin rapidly when the operator activates them and break down large chunks of snow into smaller more manageable pieces. These pieces are then carried into the chute above. The chute then fries these pieces out into the area in a particular desired direction. There are a few things that should be noted if you want operate a snow blower. Snow blowers often times require either gasoline or diesel to run so make sure that the machine is fueled beforehand so that you don't have to run out and grab fuel in the snow. The blades spin quite quickly and will deal serious damage to anything in its path so make sure that there isn't anything that the blades could injure or damage while moving it along. The chute fires the snow into the air at great height but the wind can blow this snow back into your face if you're not careful so it's advised that you point the chute in the direction of the wind so that the wind carries it away from you rather than at you."
+        }
+    ]
+}
