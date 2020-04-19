@@ -10,8 +10,7 @@ var mainView = new Vue({
         });
         console.log("here1");
 
-        for (var page of this.information) {
-            console.log(page.page);
+        for (var i = 0; i < this.information.length; i++) {
             console.log("here2");
         }
         console.log("here3");
