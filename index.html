@@ -64,10 +64,11 @@
         </div>
     </a>
 
-    {{questions}}
 
-    <!-- <div id="main">
-        <div v-for="category in categories" v-bind:class="category.name.toLowerCase()" class="category">
+    <div id="main">
+        {{questions}}
+
+        <!-- <div v-for="category in categories" v-bind:class="category.name.toLowerCase()" class="category">
             <a v-bind:href="'./information.html?data='+category.data">
                 <div class="imgDiv">
                     <img class="categoryImg" v-bind:src="'images/'+category.img"/>
@@ -79,8 +80,8 @@
                     <a v-bind:href="'./information.html?data='+category.data+'&sub='+subtopic">{{subtopic}}</a>
                 </li>
             </ul>
-        </div>
-    </div> -->
+        </div> -->
+    </div>
 
     <script src="./scripts/landing.js"></script>
 </body>
